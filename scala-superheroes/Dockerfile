@@ -4,7 +4,7 @@ MAINTAINER Karol Topolski <ktopolski.it@gmail.com>
 
 # TODO: kick this out to java-jokers and link FROM there.
 RUN apt-get update
-RUN apt-get install wget -y
+RUN apt-get install wget git -y
 RUN mkdir /usr/lib/jvm
 RUN  wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-linux-x64.tar.gz
 RUN tar -C /usr/lib/jvm -xzf jdk-8u102-linux-x64.tar.gz
