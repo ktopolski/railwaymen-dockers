@@ -17,5 +17,6 @@ RUN update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_
 RUN update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_102/bin/javac" 0
 RUN update-alternatives --set java /usr/lib/jvm/jdk1.8.0_102/bin/java
 RUN update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_102/bin/javac
+RUN mkdir ~/dev
 
 CMD '/bin/bash'
